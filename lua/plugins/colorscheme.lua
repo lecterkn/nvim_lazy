@@ -1,3 +1,5 @@
+local transparent = false
+
 return {
     {
         "folke/tokyonight.nvim",
@@ -5,11 +7,11 @@ return {
         priority = 1000,
         opts = {
             style = "night",
-            transparent = true,
+            transparent = transparent,
             styles = {
-                sidebar = "transparent",
-                floats = "transparent"
-            },
+                sidebar = transparent and "transparent" or "dark",
+                floats = transparent and "transparent" or "dark",
+             },
         },
     },
     {
@@ -21,9 +23,22 @@ return {
                 styles = {
                     bold = true,
                     italic = false,
-                    transparency = true,
+                    transparency = transparent,
                 },
             })
         end,
     },
+    {
+        "catppuccin/nvim", 
+        name = "catppuccin", 
+        priority = 1000,
+        config = function()
+            require("catppuccin").setup({
+                flavour = "mocha",
+                transparent_background = transparent,
+                term_colors = true,
+                no_italic = true,
+            })
+        end
+    }
 }
