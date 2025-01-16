@@ -11,12 +11,12 @@ return {
             styles = {
                 sidebar = transparent and "transparent" or "dark",
                 floats = transparent and "transparent" or "dark",
-             },
+            },
         },
     },
     {
-        "rose-pine/neovim", 
-	    name = "rose-pine",
+        "rose-pine/neovim",
+        name = "rose-pine",
         config = function()
             require("rose-pine").setup({
                 variant = "moon",
@@ -29,8 +29,8 @@ return {
         end,
     },
     {
-        "catppuccin/nvim", 
-        name = "catppuccin", 
+        "catppuccin/nvim",
+        name = "catppuccin",
         priority = 1000,
         config = function()
             require("catppuccin").setup({

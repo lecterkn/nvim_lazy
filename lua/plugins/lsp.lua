@@ -23,6 +23,7 @@ function cmp_setup()
                 end
             end, { 'i', 's' }),
             ['<S-Tab>'] = cmp.mapping.select_prev_item({ behavior = 'select' }),
+            ['<CR>'] = cmp.mapping.confirm({ select = false }),
         }),
     })
 end
