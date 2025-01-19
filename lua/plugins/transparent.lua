@@ -12,6 +12,8 @@ return {
             },
             extra_groups = {
                 "NormalFloat",
+                "Pmenu",
+                "Float"
             },
             exclude_groups = {},
             on_clear = function() end,
