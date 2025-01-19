@@ -1,9 +1,7 @@
-function mason_setup()
-    require('mason').setup({})
-end
-
 function mason_lspconfig_setup()
     local lspconfig = require("lspconfig")
+
+    require('mason').setup()
     require('mason-lspconfig').setup({
         ensure_installed = { 'lua_ls', 'rust_analyzer', 'ts_ls', 'gopls', 'zls', 'tailwindcss' },
         handlers = {
@@ -58,12 +56,9 @@ function format_on_save_setup()
 end
 
 return {
-    {
+    "williamboman/mason-lspconfig.nvim",
+    dependencies = {
         "williamboman/mason.nvim",
-        config = mason_setup
     },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        config = mason_lspconfig_setup
-    },
+    config = mason_lspconfig_setup
 }
