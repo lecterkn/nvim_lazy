@@ -1,4 +1,4 @@
-local scheme_file = vim.fn.expand('$HOME/.config/nvim/configs/colorscheme')
+local scheme_file = vim.fn.expand('$HOME/.config/nvim/.configs/colorscheme')
 
 local function save_colorscheme(scheme)
     local file = io.open(scheme_file, 'w')
