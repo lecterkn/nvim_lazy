@@ -4,6 +4,7 @@ opt.guicursor = ""
 
 opt.nu = true
 opt.relativenumber = true
+opt.wrap = false
 
 opt.tabstop = 4
 opt.shiftwidth = 4
