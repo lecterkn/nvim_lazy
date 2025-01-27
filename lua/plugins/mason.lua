@@ -23,7 +23,7 @@ function mason_lspconfig_setup()
             end,
         }
     })
-    format_on_save_setup()
+    -- format_on_save_setup()
 end
 
 function format_on_save_setup()
