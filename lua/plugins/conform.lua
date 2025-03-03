@@ -6,6 +6,8 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "goimports", "gofmt" },
+				java = { "google-java-format" },
+				kotlin = { "ktlint" },
 				svelte = { "prettier" },
 				markdown = { "prettier" },
 				vue = { "prettier" },
