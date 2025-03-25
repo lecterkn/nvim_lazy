@@ -6,7 +6,6 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				go = { "goimports", "gofmt" },
-				java = { "google-java-format" },
 				kotlin = { "ktlint" },
 				svelte = { "prettier" },
 				markdown = { "prettier" },
@@ -18,6 +17,7 @@ return {
 				typescript = { "prettier" },
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
+				["*"] = { "codespell" },
 			},
 			format_on_save = {
 				timeout_ms = 5000,
