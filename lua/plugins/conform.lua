@@ -7,7 +7,6 @@ return {
 				lua = { "stylua" },
 				go = { "goimports", "gofmt" },
 				kotlin = { "ktlint" },
-				svelte = { "prettier" },
 				markdown = { "prettier" },
 				vue = { "prettier" },
 				html = { "prettier" },
