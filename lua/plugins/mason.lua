@@ -14,7 +14,7 @@ function MasonSetup()
 			"cssls",
 			"bashls",
 			"vimls",
-			"volar",
+			"vue_ls",
 		},
 		handlers = {
 			function(server_name)
@@ -64,7 +64,7 @@ function MasonSetup()
 					},
 				})
 			end,
-			["volar"] = function()
+			["vue_ls"] = function()
 				lspconfig.volar.setup({
 					init_options = {
 						vue = {
